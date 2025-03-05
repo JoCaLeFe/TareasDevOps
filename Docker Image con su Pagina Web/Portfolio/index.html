@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Portfolio</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800;900&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <script src="js/modernizr.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navigation-bar" tabindex="0">
+
+    <div class=" offcanvas-btn text-end m-3">
+        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"><iconify-icon icon="ci:hamburger-lg"
+                style="font-size: 30px;"></iconify-icon></button>
+    </div>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <header class="hero position-fixed">
+                <div class="container hero-container text-center align-content-between">
+                    <div>
+                        <br>
+                        <br>
+                        <br>
+                        <img src="images/fotoCircular.png" class="hero-img mb-4 rounded-circle" alt="Bootstrap Themes" width="180" height="180" loading="lazy">
+
+                        <h2 class="fw-bold mt-3">José Carlos Leo Fernández</h2>
+                        <p>Ingeniero de Software</p>
+                        <div class="social-icon my-3">
+                            <p>
+                                <a class="social-link mx-3 active" href="https://github.com/JoCaLeFe" target="_blank"> <iconify-icon icon="icomoon-free:github"></iconify-icon> </a>
+
+                                <a class="social-link mx-3 " href="https://www.linkedin.com/in/josé-carlos-leo-fernández" target="_blank"> <iconify-icon icon="icomoon-free:linkedin"></iconify-icon> </a>
+
+                                <a class="social-link mx-3 " href="https://www.instagram.com/jclefe" target="_blank"> <iconify-icon icon="icomoon-free:instagram"></iconify-icon> </a>
+
+                                <a class="social-link mx-3 " href="https://www.facebook.com/jclefe" target="_blank"> <iconify-icon icon="icomoon-free:facebook"></iconify-icon> </a>
+                            </p>
+
+                        </div>
+                    </div>
+            </header>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <section id="navigation-bar" class="navigation position-fixed ">
+
+
+                <ul class="nav nav-pills text-center align-items-center ms-xl-5 ms-3" style="margin-top: 145px;">
+                    <li>
+                        <a href="#home" class="nav-link active rounded-0" aria-current="page" data-bs-toggle="tooltip"
+                            data-bs-placement="right" aria-label="Home" data-bs-original-title="Home">
+                            <iconify-icon icon="ic:round-home"></iconify-icon>
+
+                        </a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="#about" class="nav-link rounded-0" data-bs-toggle="tooltip" data-bs-placement="right"
+                            aria-label="Dashboard" data-bs-original-title="Dashboard">
+                            <iconify-icon icon="ic:round-person"></iconify-icon>
+                        </a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="#resume" class="nav-link rounded-0" data-bs-toggle="tooltip" data-bs-placement="right"
+                            aria-label="Orders" data-bs-original-title="Orders">
+                            <iconify-icon icon="ic:round-school"></iconify-icon>
+                        </a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="#contact" class="nav-link rounded-0" data-bs-toggle="tooltip" data-bs-placement="right"
+                            aria-label="Customers" data-bs-original-title="Customers">
+                            <iconify-icon icon="ic:round-phone"></iconify-icon>
+                        </a>
+                    </li>
+                </ul>
+
+            </section>
+
+            <div class="col-xl-6 offset-xl-2">
+                <div class="container content-container">
+
+                    <section id="home" class="mt-0">
+
+                        <div class=" py-lg-4 my-lg-4 text-center">
+                            <h1 class="fw-bold">¡Hola! Soy Leo</h1>
+                            <div class="col-lg-11 mx-auto">
+                                <p class="lead-paragraph mb-4">Ingeniero de Software en formación con experiencia en desarrollo web y móvil, 
+                                    gestión de redes sociales y producción de contenido digital.</p>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <section id="about" class="mt-0">
+
+                        <div class="py-4 my-4 ">
+                            <h1 class="fw-bold mt-5">Acerca de Mí</h1>
+                            <p class="lead-paragraph my-4">Soy estudiante de Ingeniería de Software con experiencia en desarrollo web y móvil, 
+                                gestión de redes sociales y producción de contenido digital. Me apasiona la tecnología, la fotografía y la grabación de videos. 
+                                En mi tiempo libre, disfruto jugar pádel, ver fútbol y seguir la Fórmula 1. También me encanta viajar, conocer nuevas culturas y vivir nuevas experiencias alrededor del mundo.</p>
+                        </div>
+
+                        <hr class="mid-break my-2">
+
+                        <div class=" py-4 my-4 ">
+                            <h2 class="fw-bold">Información Personal</h2>
+
+                            <ul class="list-unstyled">
+                                <li><b>Edad:</b> 21 </li>
+                                <li><b>Ciudad:</b> Mérida, Yucatán, México </li>
+                                <li><b>Idiomas:</b> Español | Inglés (Intermedio) </li>
+                                <li><b>Correo:</b> jocalefe03@gmail.com</li>
+                                <li><b>Celular:</b> +52 9991999999</li>
+                            </ul>
+
+                        </div>
+
+                    </section>
+
+                    <section id="resume">
+                        <div class="py-4 my-4 ">
+                            <h1 class="fw-bold mt-5">Currículum</h1>
+                        </div>
+
+                        <hr class="mid-break my-2">
+
+
+                        <div class="py-4 my-4 ">
+                            <h2 class="fw-bold pb-4">Habilidades</h2>
+
+
+                            <div id="progressbar-tooltip-id" class="progressbar-tooltip">
+
+                                <h4>FlutterFlow</h4>
+                                <div class="ab-progress progress-tooltip" data-progress data-tooltip="true" data-value="100" data-title=""></div>
+
+                                <h4>HTML | CSS | JavaScript</h4>
+                                <div class="ab-progress progress-tooltip" data-progress data-tooltip="true" data-value="80" data-title=""></div>
+
+                                <h4>Python</h4>
+                                <div class="ab-progress progress-tooltip" data-progress data-tooltip="true" data-value="70" data-title=""></div>
+
+                                <h4>Swift</h4>
+                                <div class="ab-progress progress-tooltip" data-progress data-tooltip="true" data-value="50" data-title=""></div>
+
+                                <h4>Supabase</h4>
+                                <div class="ab-progress progress-tooltip" data-progress data-tooltip="true" data-value="90" data-title=""></div>
+
+                                <h4>Adobe Photoshop</h4>
+                                <div class="ab-progress progress-tooltip" data-progress data-tooltip="true" data-value="90" data-title=""></div>
+
+                                <h4>Adobe Illustrator</h4>
+                                <div class="ab-progress progress-tooltip" data-progress data-tooltip="true" data-value="85" data-title=""></div>
+
+                                <h4>Final Cut Pro</h4>
+                                <div class="ab-progress progress-tooltip" data-progress data-tooltip="true" data-value="100" data-title=""></div>
+
+                                <h4>Motion</h4>
+                                <div class="ab-progress progress-tooltip" data-progress data-tooltip="true" data-value="80" data-title=""></div>
+
+                            </div>
+
+                            <div class="py-4 my-4">
+                                <h2 class="fw-bold pb-4">Habilidades Blandas</h2>
+                            
+                                <div id="progressbar-tooltip-id" class="progressbar-tooltip softskills">
+                            
+                                    <h4>Adaptabilidad</h4>
+                                    <div class="ab-progress progress-tooltip percent-none" data-progress data-tooltip="true" data-value="100"></div>
+                            
+                                    <h4>Comunicación</h4>
+                                    <div class="ab-progress progress-tooltip percent-none" data-progress data-tooltip="true" data-value="100"></div>
+                            
+                                    <h4>Creatividad</h4>
+                                    <div class="ab-progress progress-tooltip percent-none" data-progress data-tooltip="true" data-value="100"></div>
+                            
+                                    <h4>Iniciativa</h4>
+                                    <div class="ab-progress progress-tooltip percent-none" data-progress data-tooltip="true" data-value="100"></div>
+                            
+                                    <h4>Positividad</h4>
+                                    <div class="ab-progress progress-tooltip percent-none" data-progress data-tooltip="true" data-value="100"></div>
+                            
+                                    <h4>Flexibilidad</h4>
+                                    <div class="ab-progress progress-tooltip percent-none" data-progress data-tooltip="true" data-value="100"></div>
+                            
+                                    <h4>Resolución de problemas</h4>
+                                    <div class="ab-progress progress-tooltip percent-none" data-progress data-tooltip="true" data-value="100"></div>
+                            
+                                    <h4>Trabajo bajo presión</h4>
+                                    <div class="ab-progress progress-tooltip percent-none" data-progress data-tooltip="true" data-value="100"></div>
+                            
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <hr class="mid-break my-2">
+
+                        <div class="py-4 my-4">
+                            <h2 class="fw-bold pb-4">Experiencia</h2>
+                        
+                            <div class="row justify-content-start" data-aos="fade-up">
+                                <div class="col-7">
+                                    <div class="data-info">
+                                        <p class="meta-date">Febrero 2025 - Actualidad |<a class="open-description"> FILEY </a></p>
+                                        <h3 class="info-title">Desarrollador de Software</h3>
+                                        <p>Desarrollo de un sistema de gestión de alimentos mediante códigos QR para la XIII Feria Internacional de la Lectura Yucatán 2025. 
+                                           Implementación de módulos para la asignación de alimentos, gestión de usuarios, escaneo y validación de códigos QR, y generación de reportes 
+                                           sobre los alimentos canjeados.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-end" data-aos="fade-up">
+                                <div class="col-7">
+                                    <div class="data-info">
+                                        <p class="meta-date">Enero 2025 - Actualidad |<a class="open-description"> La Bombilla Estancia </a></p>
+                                        <h3 class="info-title">Desarrollador Web</h3>
+                                        <p>Diseño y desarrollo del sitio web para el hotel La Bombilla Estancia en León, Guanajuato. 
+                                           Creación de una plataforma para mostrar habitaciones, amenidades y servicios, optimizando la experiencia del usuario y la accesibilidad digital.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="row justify-content-start" data-aos="fade-up">
+                                <div class="col-7">
+                                    <div class="data-info">
+                                        <p class="meta-date">Junio 2024 - Actualidad |<a class="open-description"> WODEX </a></p>
+                                        <h3 class="info-title">Desarrollador de Software</h3>
+                                        <p>Desarrollo de una aplicación para la gestión de rutinas de ejercicio y administración de gimnasios. 
+                                           Participación en la estimación de costos, especificación de requisitos, diseño de mockups y planificación del mantenimiento del sistema.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="row justify-content-end" data-aos="fade-up">
+                                <div class="col-7">
+                                    <div class="data-info">
+                                        <p class="meta-date">Abril - Junio 2024 |<a class="open-description"> CANACO Mérida </a></p>
+                                        <h3 class="info-title">Desarrollador de Software</h3>
+                                        <p>Desarrollo de una plataforma digital para incentivar el voto en elecciones locales. Responsable del diseño de mockups, desarrollo del sistema, 
+                                           producción de tutoriales y soporte técnico.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="row justify-content-start" data-aos="fade-up">
+                                <div class="col-7">
+                                    <div class="data-info">
+                                        <p class="meta-date">Agosto 2023 - Febrero 2024 |<a class="open-description"> Diseña tu Ciudad - Ayuntamiento de Mérida </a></p>
+                                        <h3 class="info-title">Prácticas Profesionales - Desarrollo de Software</h3>
+                                        <p>Participación en el desarrollo de software para una plataforma de participación ciudadana. Diseño de wireframes, pruebas funcionales, soporte técnico y 
+                                           producción de contenido audiovisual, incluyendo video tutoriales.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="row justify-content-end" data-aos="fade-up">
+                                <div class="col-7">
+                                    <div class="data-info">
+                                        <p class="meta-date">Octubre 2022 |<a class="open-description"> Hackathon Banco BASE </a></p>
+                                        <h3 class="info-title">Desarrollador Frontend</h3>
+                                        <p>Diseño y desarrollo de un prototipo funcional de producto financiero utilizando HTML, JavaScript y PHP. Trabajo en equipo con mentoría de expertos 
+                                           en tecnología y finanzas. Presentación del proyecto ante un panel de jueces.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="row justify-content-start" data-aos="fade-up">
+                                <div class="col-7">
+                                    <div class="data-info">
+                                        <p class="meta-date">Mayo - Agosto 2022 |<a class="open-description"> Introduction to Research Abroad Program (IRAP) - Texas A&M </a></p>
+                                        <h3 class="info-title">Investigador en Proyecto Científico</h3>
+                                        <p>Desarrollo de un proyecto de investigación sobre el impacto del sargazo en la Península de Yucatán en colaboración con Texas A&M University. 
+                                           Presentación del proyecto en Texas, obteniendo los premios "Best Overall Poster and Presentation" y "Most Innovative Research Topic".</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-end" data-aos="fade-up">
+                                <div class="col-7">
+                                    <div class="data-info">
+                                        <p class="meta-date">2020 - Actualidad |<a class="open-description"> Cocina de Addy </a></p>
+                                        <h3 class="info-title">Productor y Community Manager</h3>
+                                        <p>Gestión y crecimiento de una comunidad con más de 2.5 millones de suscriptores en YouTube. 
+                                           Producción y edición de videos, diseño gráfico, análisis de datos, gestión de transmisiones en vivo, 
+                                           administración y mantenimiento de la página web. Participación en reuniones con equipos de YouTube y Facebook.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <hr class="mid-break my-2">
+
+                        <div class="py-4 my-4">
+                            <h2 class="fw-bold pb-4">Educación</h2>
+                        
+                            <div class="row justify-content-start" data-aos="fade-up">
+                                <div class="col-7">
+                                    <div class="data-info">
+                                        <p class="meta-date">2018 - 2021 |<a class="open-description"> Colegio Jenaro Rodríguez Correa </a></p>
+                                        <h3 class="info-title">Preparatoria</h3>
+                                        <p>Educación media superior con enfoque en ciencias exactas y tecnología.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="row justify-content-end" data-aos="fade-up">
+                                <div class="col-7">
+                                    <div class="data-info">
+                                        <p class="meta-date">2021 - Graduación: Diciembre 2025 |<a class="open-description"> Universidad Autónoma de Yucatán </a></p>
+                                        <h3 class="info-title">Ingeniería en Software</h3>
+                                        <p>Formación en desarrollo de software, ingeniería de sistemas y tecnología de la información.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+
+
+                    <section id="contact">
+
+                        <div class="py-4 my-4">
+                            <h1 class="fw-bold mt-5">Contacto</h1>
+                        </div>
+
+                        <div class="py-4 my-4 mb-5">
+
+
+                            <form action="mailto:jocalefe03@gmail.com?subject=Contacto%20desde%20Web" method="post" enctype="text/plain" class="form-group contact-form">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" minlength="2" name="name" placeholder="Nombre*" class="form-control" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="email" name="email" placeholder="Correo*" class="form-control" required>
+                                    </div>
+                                </div>
+                            
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <textarea class="form-control mt-4 mb-4" name="message" placeholder="Mensaje" style="height: 150px;" required></textarea>
+                            
+                                        <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </section>
+
+                </div>
+            </div>
+            
+            <div class="hero-sidebar col-xl-3 offset-xl-1">
+                <header class="hero position-fixed">
+                    <div class="container hero-container text-center my-4 pt-3 align-content-between">
+
+                        <div>
+                            <br>
+                            <br>
+                            <br>
+                            <img src="images/fotoCircular.png" class="hero-img mb-4 rounded-circle" alt="Bootstrap Themes" width="180" height="180" loading="lazy">
+
+                            <h2 class="fw-bold mt-3">José Carlos Leo Fernández</h2>
+                            <p>Ingeniero de Software</p>
+                            <div class="social-icon my-3">
+                                <p>
+                                    <a class="social-link mx-3 active" href="https://github.com/JoCaLeFe" target="_blank"> <iconify-icon icon="icomoon-free:github"></iconify-icon> </a>
+
+                                    <a class="social-link mx-3 " href="https://www.linkedin.com/in/josé-carlos-leo-fernández" target="_blank"> <iconify-icon icon="icomoon-free:linkedin"></iconify-icon> </a>
+
+                                    <a class="social-link mx-3 " href="https://www.instagram.com/jclefe" target="_blank"> <iconify-icon icon="icomoon-free:instagram"></iconify-icon> </a>
+
+                                    <a class="social-link mx-3 " href="https://www.facebook.com/jclefe" target="_blank"> <iconify-icon icon="icomoon-free:facebook"></iconify-icon> </a>
+                                </p>
+
+                            </div>
+                        </div>
+                </header>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+
+
+</body>
+
+</html>
