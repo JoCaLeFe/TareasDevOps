@@ -1,0 +1,33 @@
+pipeline {
+    agent any
+
+    environment {
+        IMAGE_NAME = "sicei"
+    }
+
+    stages {
+        stage('Build') {
+            steps {
+                dir('Dockerfile con Web Framework/SICEI') {
+                    script {
+                        echo "Construyendo imagen con tag ${BUILD_ID}..."
+                        sh "docker build -t ${IMAGE_NAME}:${BUILD_ID} ."
+                    }
+                }
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                script {
+                    echo "Desplegando contenedor..."
+                    sh """
+                        docker stop sicei-container || true
+                        docker rm sicei-container || true
+                        docker run -d --name sicei-container -p 8000:8000 ${IMAGE_NAME}:${BUILD_ID}
+                    """
+                }
+            }
+        }
+    }
+}
