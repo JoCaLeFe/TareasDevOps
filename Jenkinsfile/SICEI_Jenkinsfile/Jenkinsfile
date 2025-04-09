@@ -11,7 +11,7 @@ pipeline {
                 dir('Dockerfile con Web Framework/SICEI') {
                     script {
                         echo "Construyendo imagen con tag ${BUILD_ID}..."
-                        sh "docker build -t ${IMAGE_NAME}:${BUILD_ID} ."
+                        sh "/usr/local/bin/docker build -t ${IMAGE_NAME}:${BUILD_ID} ."
                     }
                 }
             }
@@ -22,9 +22,9 @@ pipeline {
                 script {
                     echo "Desplegando contenedor..."
                     sh """
-                        docker stop sicei-container || true
-                        docker rm sicei-container || true
-                        docker run -d --name sicei-container -p 8000:8000 ${IMAGE_NAME}:${BUILD_ID}
+                        /usr/local/bin/docker stop sicei-container || true
+                        /usr/local/bin/docker rm sicei-container || true
+                        /usr/local/bin/docker run -d --name sicei-container -p 5000:5000 ${IMAGE_NAME}:${BUILD_ID}
                     """
                 }
             }
