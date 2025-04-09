@@ -1,0 +1,112 @@
+Lanzada por el usuario Jose Carlos Leo Fernandez
+Obtained Jenkinsfile/SICEI_Jenkinsfile/Jenkinsfile from git https://github.com/JoCaLeFe/TareasDevOps.git
+[Pipeline] Start of Pipeline
+[Pipeline] node
+Running on Jenkins  in /Users/josecarlos/.jenkins/workspace/SICEI-Jenkinsfile
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Declarative: Checkout SCM)
+[Pipeline] checkout
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /Users/josecarlos/.jenkins/workspace/SICEI-Jenkinsfile/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/JoCaLeFe/TareasDevOps.git # timeout=10
+Fetching upstream changes from https://github.com/JoCaLeFe/TareasDevOps.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.5 (Apple Git-154)'
+ > git fetch --tags --force --progress -- https://github.com/JoCaLeFe/TareasDevOps.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision f6212aba8ceb4cf7b0177466c133d46ddd4b3e21 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f f6212aba8ceb4cf7b0177466c133d46ddd4b3e21 # timeout=10
+Commit message: "Update Jenkinsfile"
+ > git rev-list --no-walk bdb8ef9a016b59fe1929058b5dcc56bcbd87fd0e # timeout=10
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] withEnv
+[Pipeline] {
+[Pipeline] withEnv
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Build)
+[Pipeline] dir
+Running in /Users/josecarlos/.jenkins/workspace/SICEI-Jenkinsfile/Dockerfile con Web Framework/SICEI
+[Pipeline] {
+[Pipeline] script
+[Pipeline] {
+[Pipeline] echo
+Construyendo imagen con tag 5...
+[Pipeline] sh
++ /usr/local/bin/docker build -t sicei:5 .
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 470B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.10-slim
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/5] FROM docker.io/library/python:3.10-slim
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 91B done
+#5 DONE 0.0s
+
+#6 [2/5] WORKDIR /app
+#6 CACHED
+
+#7 [4/5] COPY requirements.txt .
+#7 CACHED
+
+#8 [3/5] COPY ./app /app
+#8 CACHED
+
+#9 [5/5] RUN pip install --no-cache-dir -r requirements.txt
+#9 CACHED
+
+#10 exporting to image
+#10 exporting layers done
+#10 writing image sha256:fa50679856c15091ef16092869c8528a1733954b557662a37afdf4948c0ba890 done
+#10 naming to docker.io/library/sicei:5 done
+#10 DONE 0.0s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/7xbng1umv5h4jrxaj0v7p1r3e
+[Pipeline] }
+[Pipeline] // script
+[Pipeline] }
+[Pipeline] // dir
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Deploy)
+[Pipeline] script
+[Pipeline] {
+[Pipeline] echo
+Desplegando contenedor...
+[Pipeline] sh
++ /usr/local/bin/docker stop sicei-container
+sicei-container
++ /usr/local/bin/docker rm sicei-container
+sicei-container
++ /usr/local/bin/docker run -d --name sicei-container -p 8000:8000 sicei:5
+624b80debfae6682e09beb265a41981053e978da98ec2f4cffccee273f49799e
+[Pipeline] }
+[Pipeline] // script
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // withEnv
+[Pipeline] }
+[Pipeline] // withEnv
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+Finished: SUCCESS
